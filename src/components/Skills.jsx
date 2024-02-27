@@ -18,6 +18,7 @@ export const Skills = () => {
             <Grid container direction="row" justifyContent="center" alignItems="center" spacing={4}>
                 <Grid item xs={12}>
                     <h2>SKILLS</h2>
+                    <p>Hover over icons for more details</p>
                 </Grid>
                 <Grid item xs={1}>
                     <Tooltip title="Strong foundation. Mainly used in university projects." placement="top" PopperProps={{
