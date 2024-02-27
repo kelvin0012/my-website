@@ -5,7 +5,6 @@ import { SideNav } from './components/SideNav.jsx'
 import { Home } from './components/Home.jsx'
 import { Projects } from './components/Projects.jsx'
 import { Skills } from './components/Skills.jsx'
-import { Contact } from './components/Contact.jsx'
 
 
 function App() {
