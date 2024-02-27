@@ -25,7 +25,7 @@ export const Projects = () => {
                 <VerticalTimeline lineColor="gray">
                     <VerticalTimelineElement 
                     className="vertical-timeline-element--education" 
-                    date="2020 - 2023" 
+                    date={<span style={{ color: "white" }}>2020 - 2023</span>}
                     iconStyle={{background: "white"}} 
                     icon={<img className="wsuLogo"
                         src={wsuLogo}
@@ -39,7 +39,7 @@ export const Projects = () => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement 
                     className="vertical-timeline-element--education" 
-                    date="February 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+                    date={<span style={{ color: "white" }}>February 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>}
                     iconStyle={{background: "white"}} 
                     icon={<img className="accentureLogo"
                         src={accentureLogo}
@@ -53,7 +53,7 @@ export const Projects = () => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement 
                     className="vertical-timeline-element--education" 
-                    date="February 2024 - " 
+                    date={<span style={{ color: "white" }}>February 2024 - </span>} 
                     iconStyle={{background: "white"}} 
                     icon={<img className="websiteIcon"
                     src={websiteIcon}

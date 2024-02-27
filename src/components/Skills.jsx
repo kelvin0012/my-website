@@ -27,8 +27,12 @@ export const Skills = () => {
                     <p>Python</p>
                 </Grid>
                 <Grid item xs={1}>
-                    <img className="skillsIcon" src={sqlIcon} alt="SQL Icon Image"/>
-                    <p>SQL</p>
+                    <img className="skillsIcon" src={reactIcon} alt="React Icon Image"/>
+                    <p>React</p>
+                </Grid>
+                <Grid item xs={1} sx={{paddingRight: 6}}>
+                    <img className="skillsIcon" src={jsIcon} alt="JavaScript Icon Image"/>
+                    <p>JavaScript</p>
                 </Grid>
                 <Grid item xs={1}>
                     <img className="skillsIcon" src={htmlIcon} alt="HTML Icon Image"/>
@@ -38,13 +42,9 @@ export const Skills = () => {
                     <img className="skillsIcon" src={cssIcon} alt="CSS Icon Image"/>
                     <p>CSS</p>
                 </Grid>
-                <Grid item xs={1} sx={{paddingRight: 7}}>
-                    <img className="skillsIcon" src={jsIcon} alt="JavaScript Icon Image"/>
-                    <p>JavaScript</p>
-                </Grid>
                 <Grid item xs={1}>
-                    <img className="skillsIcon" src={reactIcon} alt="React Icon Image"/>
-                    <p>React</p>
+                    <img className="skillsIcon" src={sqlIcon} alt="SQL Icon Image"/>
+                    <p>SQL</p>
                 </Grid>
                 <Grid item xs={1}>
                     <img className="skillsIcon" src={dynamodbIcon} alt="DynamoDB Icon Image"/>

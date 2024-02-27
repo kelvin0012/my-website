@@ -5,20 +5,20 @@ import { Box, ListItemButton } from '@mui/material';
 
 export const SideNav = () => {
     return (
-        <Box sx={{ maxWidth: 240, backgroundColor: 'black'}}>
+        <Box sx={{ maxWidth: 240, backgroundColor: 'rgb(23, 20, 20)'}}>
             <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kelvin-gian-228887263/">
                 <ListItemButton>
-                    <LinkedInIcon></LinkedInIcon>
+                    <LinkedInIcon fontSize="large" style={{color: 'gray'}}></LinkedInIcon>
                 </ListItemButton>
             </a>
             <a rel="noreferrer" target="_blank" href="mailto:kelvingian.business@gmail.com">
                 <ListItemButton>
-                    <EmailIcon></EmailIcon>
+                    <EmailIcon fontSize="large" style={{color: 'gray'}}></EmailIcon>
                 </ListItemButton>
             </a>
             <a rel="noreferrer" target="_blank" href="https://github.com/kelvin0012">
                 <ListItemButton>
-                    <GitHubIcon></GitHubIcon>
+                    <GitHubIcon fontSize="large" style={{color: 'gray'}}></GitHubIcon>
                 </ListItemButton>
             </a>
         </Box>

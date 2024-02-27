@@ -24,7 +24,7 @@ export const HeadNav = () => {
                         }}>
                             <Button sx={{color: 'white'}} color='inherit'>Home</Button>
                         </a>
-                    <Link to="home" smooth duration={500}>
+                    <Link to="projectsTitle" smooth duration={500}>
                         <Button sx={{color: 'white'}} color='inherit'>Experience</Button>
                     </Link>
                     <Link to="skills" smooth duration={500}>
