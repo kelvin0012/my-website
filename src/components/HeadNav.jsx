@@ -1,5 +1,6 @@
 import { AppBar, IconButton, Toolbar, Typography, Stack, Button, duration} from "@mui/material"
 import { Link } from "react-scroll"
+import profileHeadshot from "../assets/profileHeadshot.png"
 
 export const HeadNav = () => {
     return (
@@ -7,7 +8,7 @@ export const HeadNav = () => {
             <Toolbar>
                 <IconButton size='large' edge='start' color='inherit' aria-label='logo' disabled='true'> 
                     <img className="profileLogo"
-                    src="./src/assets/profileHeadshot.png"
+                    src={profileHeadshot}
                     alt="Kelvin Headshot Image"
                     />
                 </IconButton>

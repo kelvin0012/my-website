@@ -62,7 +62,7 @@ export const Projects = () => {
                         <h3 className="vertica-timeline-element-title">
                             Portfolio Website
                         </h3>
-                        <p> This very site!! Also yet to be finished!</p>
+                        <p> This very site you are using right now!!</p>
                         <p className="Tech">Tech Used: React</p>
                     </VerticalTimelineElement>
                 </VerticalTimeline>
