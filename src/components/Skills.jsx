@@ -9,7 +9,7 @@ import htmlIcon from "../assets/htmlIcon.png";
 import cssIcon from "../assets/cssIcon.png";
 import jsIcon from "../assets/jsIcon.png";
 import reactIcon from "../assets/reactIcon.png";
-import dynamodbIcon from "../assets/aws-dynamodb.png";
+import dynamodbIcon from "../assets/aws-dynamodb.svg";
 
 export const Skills = () => {
     return (
