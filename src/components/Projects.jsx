@@ -5,7 +5,9 @@ import {VerticalTimeline, VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import LanguageIcon from '@mui/icons-material/Language';
-import x from "../assets/accentureLogo.jpg";
+import accentureLogo from "../assets/accentureLogo.jpg";
+import wsuLogo from "../assets/wsuLogo.jpg"
+import websiteIcon from "../assets/websiteIcon.png"
 
 
 
@@ -26,7 +28,7 @@ export const Projects = () => {
                     date="2020 - 2023" 
                     iconStyle={{background: "white"}} 
                     icon={<img className="wsuLogo"
-                        src="./src/assets/wsuLogo.jpg"
+                        src={wsuLogo}
                         alt="WSU Logo Image"
                         />}>
                         <h3 className="vertica-timeline-element-title">
@@ -40,7 +42,7 @@ export const Projects = () => {
                     date="February 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
                     iconStyle={{background: "white"}} 
                     icon={<img className="accentureLogo"
-                        src={x}// -- test
+                        src={accentureLogo}
                         alt="Accenture Logo Image"
                         />}>
                         <h3 className="vertica-timeline-element-title">
@@ -54,7 +56,7 @@ export const Projects = () => {
                     date="February 2024 - " 
                     iconStyle={{background: "white"}} 
                     icon={<img className="websiteIcon"
-                    src="./src/assets/websiteIcon.png"
+                    src={websiteIcon}
                     alt="Website Icon Image"
                     />}>
                         <h3 className="vertica-timeline-element-title">
