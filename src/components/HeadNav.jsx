@@ -1,4 +1,4 @@
-import { AppBar, IconButton, Toolbar, Typography, Stack, Button} from "@mui/material"
+import { AppBar, IconButton, Toolbar, Typography, Stack, Button, duration} from "@mui/material"
 import { Link } from "react-scroll"
 
 export const HeadNav = () => {
@@ -16,11 +16,14 @@ export const HeadNav = () => {
                 </Typography>
                 <Stack direction="row" spacing={2}>
                         <a onClick={() => {
-                            window.scroll(0,0)
+                            window.scrollTo({
+                                top: 0,
+                                behavior: 'smooth'
+                            })
                         }}>
                             <Button sx={{color: 'white'}} color='inherit'>Home</Button>
                         </a>
-                    <Link to="projects" smooth duration={500}>
+                    <Link to="home" smooth duration={500}>
                         <Button sx={{color: 'white'}} color='inherit'>Experience</Button>
                     </Link>
                     <Link to="skills" smooth duration={500}>
