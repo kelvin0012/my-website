@@ -39,7 +39,7 @@ export const Projects = () => {
                     date="February 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
                     iconStyle={{background: "white"}} 
                     icon={<img className="accentureLogo"
-                        src="./assets/accentureLogo.jpg" // -- test
+                        src="../assets/accentureLogo.jpg" // -- test
                         alt="Accenture Logo Image"
                         />}>
                         <h3 className="vertica-timeline-element-title">
