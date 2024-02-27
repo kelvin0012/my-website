@@ -1,0 +1,94 @@
+.profileLogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.accentureLogo {
+  width: 50px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.wsuLogo,
+.websiteIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.skillsIcon {
+  width: 60px;
+  height: 60px;
+}
+
+
+
+.HeadNav {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.SideNav {
+  left:0;
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+}
+
+footer {
+  position: fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.home,
+.projectsTitle,
+.projects {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.skills {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  padding-bottom: 60px;
+}
+
+.App {
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+.Main {
+  padding-top: 100px;
+  padding-left: 400px;
+  padding-right: 400px;
+}
+
+.Tech {
+  margin-top: 30px;
+  color: #505050;
+}
