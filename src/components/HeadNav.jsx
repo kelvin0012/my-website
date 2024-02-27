@@ -1,5 +1,5 @@
 import { AppBar, IconButton, Toolbar, Typography, Stack, Button} from "@mui/material"
-import { Link } from react-scroll;
+import { Link } from "react-scroll"
 
 export const HeadNav = () => {
     return (
