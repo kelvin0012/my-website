@@ -15,15 +15,15 @@ export const HeadNav = () => {
                     KELVIN GIAN
                 </Typography>
                 <Stack direction="row" spacing={2}>
-                    <Link to="home" smooth duration={500}>
+                    <Link to="homeTitle" smooth duration={500}>
                         <Button sx={{color: 'white'}} color='inherit'>Home</Button>
                     </Link>
-                    <a href="#projects">
+                    <Link to="projectsTitle" smooth duration={500}>
                         <Button sx={{color: 'white'}} color='inherit'>Experience</Button>
-                    </a>
-                    <a href="#skills">
+                    </Link>
+                    <Link to="skills" smooth duration={500}>
                         <Button sx={{color: 'white'}} color='inherit'>Skills</Button>
-                    </a>
+                    </Link>
                 </Stack>
             </Toolbar>
         </AppBar>
