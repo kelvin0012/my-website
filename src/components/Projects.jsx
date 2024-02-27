@@ -5,7 +5,7 @@ import {VerticalTimeline, VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import LanguageIcon from '@mui/icons-material/Language';
-import x from "../assets/accentureLogo.jpg";
+import x from "/assets/accentureLogo.jpg";
 
 
 
