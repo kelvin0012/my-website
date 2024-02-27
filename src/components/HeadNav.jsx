@@ -7,7 +7,7 @@ export const HeadNav = () => {
             <Toolbar>
                 <IconButton size='large' edge='start' color='inherit' aria-label='logo' disabled='true'> 
                     <img className="profileLogo"
-                    src="my-website/src/assets/profileHeadshot.png"
+                    src="/my-website/src/assets/profileHeadshot.png"
                     alt="Kelvin Headshot Image"
                     />
                 </IconButton>
