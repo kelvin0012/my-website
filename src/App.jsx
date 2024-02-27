@@ -5,6 +5,7 @@ import { SideNav } from './components/SideNav.jsx'
 import { Home } from './components/Home.jsx'
 import { Projects } from './components/Projects.jsx'
 import { Skills } from './components/Skills.jsx'
+import { Contact } from './components/Contact.jsx'
 
 
 function App() {
@@ -20,10 +21,11 @@ function App() {
           <Home/>
           <Projects/>
           <Skills/>
+          {/* <Contact/> */}
       </div>
-      <footer>
+      {/* <footer>
         Designed and Made by Kelvin Gian | 2024
-      </footer>
+      </footer> */}
     </div>
   )
 }

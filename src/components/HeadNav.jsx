@@ -4,7 +4,7 @@ import profileHeadshot from "../assets/profileHeadshot.png"
 
 export const HeadNav = () => {
     return (
-        <AppBar sx={{backgroundColor: 'black'}}>
+        <AppBar sx={{backgroundColor: 'rgb(13, 12, 12)'}}>
             <Toolbar>
                 <IconButton size='large' edge='start' color='inherit' aria-label='logo' disabled='true'> 
                     <img className="profileLogo"

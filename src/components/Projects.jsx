@@ -22,7 +22,7 @@ export const Projects = () => {
                 </Grid>
             </div>
             <div className="projects">
-                <VerticalTimeline lineColor="white">
+                <VerticalTimeline lineColor="gray">
                     <VerticalTimelineElement 
                     className="vertical-timeline-element--education" 
                     date="2020 - 2023" 
@@ -35,7 +35,7 @@ export const Projects = () => {
                             Western Sydney University
                         </h3>
                         <p> Bachelor of Computer Science, Artificial Intelligence Major</p>
-                        <p className="Tech"> Tech Used: C++, SQL, HTML, CSS, JavaScript</p>
+                        <p className="Tech"> Awards: 2022 Dean's Merit List</p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement 
                     className="vertical-timeline-element--education" 
@@ -49,7 +49,7 @@ export const Projects = () => {
                             Accenture Hackathon
                         </h3>
                         <p>Developed a travel planning assistant app that creates personalised travel times for users when taking trips</p>
-                        <p className="Tech">Tech Used: Python, AWS DynamoDB </p>
+                        <p className="Tech">Tech Used: Python, AWS DynamoDB, React </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement 
                     className="vertical-timeline-element--education" 
