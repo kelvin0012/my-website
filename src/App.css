@@ -22,6 +22,11 @@
 .skillsIcon {
   width: 60px;
   height: 60px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skillsIcon:hover {
+  transform: scale(1.2) rotate(5deg); 
 }
 
 

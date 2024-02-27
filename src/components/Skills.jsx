@@ -10,6 +10,7 @@ import cssIcon from "../assets/cssIcon.png";
 import jsIcon from "../assets/jsIcon.png";
 import reactIcon from "../assets/reactIcon.png";
 import dynamodbIcon from "../assets/aws-dynamodb.svg";
+import Tooltip from '@mui/material/Tooltip';
 
 export const Skills = () => {
     return (
@@ -19,37 +20,146 @@ export const Skills = () => {
                     <h2>SKILLS</h2>
                 </Grid>
                 <Grid item xs={1}>
-                    <img className="skillsIcon" src={cppIcon} alt="CPP Icon Image"/>
-                    <p>C++</p>
+                    <Tooltip title="Strong foundation. Mainly used in university projects." placement="top" PopperProps={{
+                        popperOptions: {
+                        modifiers: [
+                            {
+                            name: 'offset',
+                            options: {
+                                offset: [0, 50], 
+                                },
+                            },
+                        ],
+                    },
+                }}>
+                        <img className="skillsIcon" src={cppIcon} alt="CPP Icon Image"/>
+                        <p>C++</p>
+                    </Tooltip>
                 </Grid>
                 <Grid item xs={1}>
+                    <Tooltip title="Extensive experience. Most used for backend development." placement="top" PopperProps={{
+                        popperOptions: {
+                        modifiers: [
+                            {
+                            name: 'offset',
+                            options: {
+                                offset: [0, 50], 
+                                },
+                            },
+                        ],
+                    },
+                }}>
                     <img className="skillsIcon" src={pythonIcon} alt="Python Icon Image"/>
                     <p>Python</p>
+                    </Tooltip>
                 </Grid>
-                <Grid item xs={1}>
-                    <img className="skillsIcon" src={reactIcon} alt="React Icon Image"/>
-                    <p>React</p>
-                </Grid>
-                <Grid item xs={1} sx={{paddingRight: 6}}>
-                    <img className="skillsIcon" src={jsIcon} alt="JavaScript Icon Image"/>
-                    <p>JavaScript</p>
-                </Grid>
-                <Grid item xs={1}>
-                    <img className="skillsIcon" src={htmlIcon} alt="HTML Icon Image"/>
-                    <p>HTML</p>
-                </Grid>
-                <Grid item xs={1}>
-                    <img className="skillsIcon" src={cssIcon} alt="CSS Icon Image"/>
-                    <p>CSS</p>
-                </Grid>
-                <Grid item xs={1}>
-                    <img className="skillsIcon" src={sqlIcon} alt="SQL Icon Image"/>
-                    <p>SQL</p>
-                </Grid>
-                <Grid item xs={1}>
-                    <img className="skillsIcon" src={dynamodbIcon} alt="DynamoDB Icon Image"/>
-                    <p>DynamoDB</p>
-                </Grid>
+                    <Grid item xs={1}>
+                    <Tooltip title="Most used in frontend development." placement="top" PopperProps={{
+                        popperOptions: {
+                        modifiers: [
+                            {
+                            name: 'offset',
+                            options: {
+                                offset: [0, 50],
+                                },
+                            },
+                        ],
+                    },
+                }}>
+                        <img className="skillsIcon" src={reactIcon} alt="React Icon Image"/>
+                        <p>React</p>
+                </Tooltip>
+                    </Grid>
+                
+                    <Grid item xs={1} sx={{paddingRight: 6}}>
+                    <Tooltip title="Strong emphasis on frontend development." placement="top" PopperProps={{
+                        popperOptions: {
+                        modifiers: [
+                            {
+                            name: 'offset',
+                            options: {
+                                offset: [0, 50], 
+                                },
+                            },
+                        ],
+                    },
+                }}>
+                        <img className="skillsIcon" src={jsIcon} alt="JavaScript Icon Image"/>
+                        <p>JavaScript</p>
+                </Tooltip>
+                    </Grid>
+        
+                    <Grid item xs={1}>
+                    <Tooltip title="Frequently used for structuring web content." placement="top" PopperProps={{
+                        popperOptions: {
+                        modifiers: [
+                            {
+                            name: 'offset',
+                            options: {
+                                offset: [0, 50], 
+                                },
+                            },
+                        ],
+                    },
+                }}>
+                        <img className="skillsIcon" src={htmlIcon} alt="HTML Icon Image"/>
+                        <p>HTML</p>
+                </Tooltip>
+                    </Grid>
+                
+                    <Grid item xs={1}>
+                    <Tooltip title="Frequently used for styling and layout design." placement="top" PopperProps={{
+                        popperOptions: {
+                        modifiers: [
+                            {
+                            name: 'offset',
+                            options: {
+                                offset: [0, 50], 
+                                },
+                            },
+                        ],
+                    },
+                }}>
+                        <img className="skillsIcon" src={cssIcon} alt="CSS Icon Image"/>
+                        <p>CSS</p>
+                </Tooltip>
+                    </Grid>
+                
+                    <Grid item xs={1}>
+                    <Tooltip title="SQL knowledge. Mainly learnt from university. " placement="top" PopperProps={{
+                        popperOptions: {
+                        modifiers: [
+                            {
+                            name: 'offset',
+                            options: {
+                                offset: [0, 50],
+                                },
+                            },
+                        ],
+                    },
+                }}>
+                        <img className="skillsIcon" src={sqlIcon} alt="SQL Icon Image"/>
+                        <p>SQL</p>
+                </Tooltip>
+                    </Grid>
+                
+                    <Grid item xs={1}>
+                    <Tooltip title="DynamoDB skills. Used in backend development." placement="top" PopperProps={{
+                        popperOptions: {
+                        modifiers: [
+                            {
+                            name: 'offset',
+                            options: {
+                                offset: [0, 50],
+                                },
+                            },
+                        ],
+                    },
+                }}>
+                        <img className="skillsIcon" src={dynamodbIcon} alt="DynamoDB Icon Image"/>
+                        <p>DynamoDB</p>
+                </Tooltip>
+                    </Grid>
             </Grid>       
         </div>
     )
