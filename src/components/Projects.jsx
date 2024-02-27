@@ -5,7 +5,6 @@ import {VerticalTimeline, VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import LanguageIcon from '@mui/icons-material/Language';
-import { x } from "./src/assets/websiteIcon.png"
 
 
 
@@ -40,7 +39,7 @@ export const Projects = () => {
                     date="February 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
                     iconStyle={{background: "white"}} 
                     icon={<img className="accentureLogo"
-                        src= {x}
+                        src="../assets/websiteIcon.png"
                         alt="Accenture Logo Image"
                         />}>
                         <h3 className="vertica-timeline-element-title">
