@@ -1,5 +1,5 @@
 import { AppBar, IconButton, Toolbar, Typography, Stack, Button} from "@mui/material"
-
+import { Link } from react-scroll;
 
 export const HeadNav = () => {
     return (
@@ -15,9 +15,9 @@ export const HeadNav = () => {
                     KELVIN GIAN
                 </Typography>
                 <Stack direction="row" spacing={2}>
-                    <a href="#home">
+                    <Link to="home" smooth duration={500}>
                         <Button sx={{color: 'white'}} color='inherit'>Home</Button>
-                    </a>
+                    </Link>
                     <a href="#projects">
                         <Button sx={{color: 'white'}} color='inherit'>Experience</Button>
                     </a>
