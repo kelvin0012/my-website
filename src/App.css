@@ -133,3 +133,25 @@ body {
   margin-top: 30px;
   color: #505050;
 }
+
+.underlineHover {
+  position: relative;
+  text-decoration: none;
+}
+
+.underlineHover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.underlineHover:hover::after {
+  transform: scaleX(1);
+}

@@ -22,13 +22,13 @@ export const HeadNav = () => {
                                 behavior: 'smooth'
                             })
                         }}>
-                            <Button sx={{color: 'white'}} color='inherit'>Home</Button>
+                            <Button  className="underlineHover" sx={{color: 'white'}} color='inherit'>Home</Button>
                         </a>
                     <Link to="projectsTitle" smooth duration={500}>
-                        <Button sx={{color: 'white'}} color='inherit'>Experience</Button>
+                        <Button className="underlineHover" sx={{color: 'white'}} color='inherit'>Experience</Button>
                     </Link>
                     <Link to="skills" smooth duration={500}>
-                        <Button sx={{color: 'white'}} color='inherit'>Skills</Button>
+                        <Button className="underlineHover" sx={{color: 'white'}} color='inherit'>Skills</Button>
                     </Link>
                 </Stack>
             </Toolbar>
