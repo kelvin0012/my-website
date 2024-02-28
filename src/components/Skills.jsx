@@ -58,7 +58,7 @@ export const Skills = () => {
                         <img className="skillsIcon" src={reactIcon} alt="React Icon Image"/>
                         <p>React</p>
                     </Grid>
-                    <Grid item xs={1} sx={{paddingRight: 9}}>
+                    <Grid item xs={1}>
                         <img className="skillsIcon" src={jsIcon} alt="JavaScript Icon Image"/>
                         <p>JavaScript</p>
                     </Grid>
