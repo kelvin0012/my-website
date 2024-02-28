@@ -17,7 +17,7 @@ export const Skills = () => {
         <div className="skills">
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={12}>
-                    <h2>SKILLS</h2>
+                    <h2 className="skillsTitle">SKILLS</h2>
                     <p className="hoverText">Hover over icons for more details</p>
                 </Grid>
                 <Grid item xs={1}>

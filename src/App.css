@@ -29,6 +29,10 @@
   transform: scale(1.2) rotate(5deg); 
 }
 
+.skillsTitle {
+  margin-bottom: inherit;
+}
+
 .hoverText {
   padding-bottom: 30px;
 }
@@ -93,9 +97,6 @@
 
 .title {
   margin-bottom: 1px;
-  border: 2px solid #FFD700; /* Border around the text */
-  border-radius: 10px; /* Rounded corners */
-  padding: 10px; /* Add padding for space between text and border */
 }
 
 .skills {
