@@ -89,7 +89,7 @@ export const Projects = () => {
                     alt="WSU Icon Image"
                     />}>
                         <h3 className="vertica-timeline-element-title">
-                            Web Developer Intern
+                            Software Engineer Intern
                         </h3>
                         <p> Currently a part of the Developer team for the Work Place Management Information System Project</p>
                     </VerticalTimelineElement>
