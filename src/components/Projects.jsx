@@ -92,6 +92,7 @@ export const Projects = () => {
                             Software Engineer Intern
                         </h3>
                         <p> Currently a part of the Developer team for the Work Place Management Information System Project</p>
+                        <p className="Tech">Tech Used: React, Express, MySQL</p>
                     </VerticalTimelineElement>
                 </VerticalTimeline>
             </div>
