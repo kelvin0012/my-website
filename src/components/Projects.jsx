@@ -1,7 +1,8 @@
 import { Container } from "@mui/material"
 import { Box, Grid } from "@mui/material"
 import Divider from '@mui/material/Divider';
-import {VerticalTimeline, VerticalTimelineElement,
+import {
+    VerticalTimeline, VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import LanguageIcon from '@mui/icons-material/Language';
@@ -24,27 +25,55 @@ export const Projects = () => {
             </div>
             <div className="projects">
                 <VerticalTimeline lineColor="gray">
-                    <VerticalTimelineElement 
-                    className="vertical-timeline-element--education" 
-                    date={<span style={{ color: "white" }}>2020 - 2023</span>}
-                    iconStyle={{background: "white"}} 
-                    icon={<img className="wsuLogo"
-                        src={wsuLogo}
-                        alt="WSU Logo Image"
+                <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
+                        date={<span style={{ color: "white" }}>March 2024 - Current</span>}
+                        iconStyle={{ background: "white" }}
+                        icon={<img className="websiteIcon"
+                            src={wsuLogo}
+                            alt="WSU Icon Image"
                         />}>
                         <h3 className="vertica-timeline-element-title">
-                            Western Sydney University
+                            Software Engineer Intern
                         </h3>
-                        <p> Bachelor of Computer Science, Artificial Intelligence Major</p>
-                        <p className="Tech"> Awards: 2022 Dean's Merit List</p>
+                        <p> Currently a part of the Developer team for the Work Place Management Information System Project</p>
+                        <p className="Tech">Tech Used: React, Node.js, Express.js, MySQL</p>
                     </VerticalTimelineElement>
-                    <VerticalTimelineElement 
-                    className="vertical-timeline-element--education" 
-                    date={<span style={{ color: "white" }}>February 2024</span>}
-                    iconStyle={{background: "white"}} 
-                    icon={<img className="accentureLogo"
-                        src={accentureLogo}
-                        alt="Accenture Logo Image"
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
+                        date={<span style={{ color: "white" }}>March 2024</span>}
+                        iconStyle={{ background: "white" }}
+                        icon={<img className="websiteIcon"
+                            src={unihack2024Icon}
+                            alt="unihack2024 Icon Image"
+                        />}>
+                        <h3 className="vertica-timeline-element-title">
+                            Atlassian x UNIHACK
+                        </h3>
+                        <p> Developed a slackbot that uses AI to summarise conversations from the past number of days, hours, or messages and displays the summary on a website</p>
+                        <p className="Tech">Tech Used: React, Python</p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
+                        date={<span style={{ color: "white" }}>February 2024 - Current</span>}
+                        iconStyle={{ background: "white" }}
+                        icon={<img className="websiteIcon"
+                            src={websiteIcon}
+                            alt="Website Icon Image"
+                        />}>
+                        <h3 className="vertica-timeline-element-title">
+                            Portfolio Website
+                        </h3>
+                        <p> This very site you are using right now!!</p>
+                        <p className="Tech">Tech Used: React</p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
+                        date={<span style={{ color: "white" }}>February 2024</span>}
+                        iconStyle={{ background: "white" }}
+                        icon={<img className="accentureLogo"
+                            src={accentureLogo}
+                            alt="Accenture Logo Image"
                         />}>
                         <h3 className="vertica-timeline-element-title">
                             Accenture Hackathon
@@ -52,47 +81,19 @@ export const Projects = () => {
                         <p>Developed a travel planning assistant app that creates personalised travel times for users when taking trips</p>
                         <p className="Tech">Tech Used: Python, AWS DynamoDB, React </p>
                     </VerticalTimelineElement>
-                    <VerticalTimelineElement 
-                    className="vertical-timeline-element--education" 
-                    date={<span style={{ color: "white" }}>February 2024 -</span>} 
-                    iconStyle={{background: "white"}} 
-                    icon={<img className="websiteIcon"
-                    src={websiteIcon}
-                    alt="Website Icon Image"
-                    />}>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
+                        date={<span style={{ color: "white" }}>2020 - 2023</span>}
+                        iconStyle={{ background: "white" }}
+                        icon={<img className="wsuLogo"
+                            src={wsuLogo}
+                            alt="WSU Logo Image"
+                        />}>
                         <h3 className="vertica-timeline-element-title">
-                            Portfolio Website
+                            Western Sydney University
                         </h3>
-                        <p> This very site you are using right now!!</p>
-                        <p className="Tech">Tech Used: React</p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement 
-                    className="vertical-timeline-element--education" 
-                    date={<span style={{ color: "white" }}>March 2024</span>} 
-                    iconStyle={{background: "white"}} 
-                    icon={<img className="websiteIcon"
-                    src={unihack2024Icon}
-                    alt="unihack2024 Icon Image"
-                    />}>
-                        <h3 className="vertica-timeline-element-title">
-                            Atlassian x UNIHACK
-                        </h3>
-                        <p> Developed a slackbot that uses AI to summarise conversations from the past number of days, hours, or messages and displays the summary on a website</p>
-                        <p className="Tech">Tech Used: React, Python</p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement 
-                    className="vertical-timeline-element--education" 
-                    date={<span style={{ color: "white" }}>March 2024 -</span>} 
-                    iconStyle={{background: "white"}} 
-                    icon={<img className="websiteIcon"
-                    src={wsuLogo}
-                    alt="WSU Icon Image"
-                    />}>
-                        <h3 className="vertica-timeline-element-title">
-                            Software Engineer Intern
-                        </h3>
-                        <p> Currently a part of the Developer team for the Work Place Management Information System Project</p>
-                        <p className="Tech">Tech Used: React, Express, MySQL</p>
+                        <p> Bachelor of Computer Science, Artificial Intelligence Major</p>
+                        <p className="Tech"> Awards: 2022 Dean's Merit List & 2023 Dean's Merit List</p>
                     </VerticalTimelineElement>
                 </VerticalTimeline>
             </div>
