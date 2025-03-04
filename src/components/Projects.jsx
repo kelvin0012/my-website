@@ -10,6 +10,7 @@ import accentureLogo from "../assets/accentureLogo.jpg";
 import wsuLogo from "../assets/wsuLogo.jpg"
 import websiteIcon from "../assets/websiteIcon.png"
 import unihack2024Icon from "../assets/unihack2024Icon.png"
+import optusIcon from "../assets/Optus_logo.png"
 
 
 
@@ -27,7 +28,21 @@ export const Projects = () => {
                 <VerticalTimeline lineColor="gray">
                 <VerticalTimelineElement
                         className="vertical-timeline-element--education"
-                        date={<span style={{ color: "white" }}>March 2024 - Current</span>}
+                        date={<span style={{ color: "white" }}>February 2025 - Current</span>}
+                        iconStyle={{ background: "white" }}
+                        icon={<img className="websiteIcon"
+                            src={optusIcon}
+                            alt="optusIcon Icon Image"
+                        />}>
+                        <h3 className="vertica-timeline-element-title">
+                            Graduate Software Engineer
+                        </h3>
+                        <p> Currently a Graduate Software Engineer in AI/ML (Emerging Technology) Rotation. </p>
+                        <p className="Tech">Tech Used: Springboot, Python, BigQuery, Dialogflow CX</p>
+                    </VerticalTimelineElement>
+                <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
+                        date={<span style={{ color: "white" }}>March 2024 - Nov 2024</span>}
                         iconStyle={{ background: "white" }}
                         icon={<img className="websiteIcon"
                             src={wsuLogo}
@@ -36,7 +51,7 @@ export const Projects = () => {
                         <h3 className="vertica-timeline-element-title">
                             Software Engineer Intern
                         </h3>
-                        <p> Currently a part of the Developer team for the Work Place Management Information System Project</p>
+                        <p> Full-Stack Developer for the Work Place Management Information System Project, contributing to both front-end and back-end development.</p>
                         <p className="Tech">Tech Used: React, Node.js, Express.js, MySQL</p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -50,7 +65,7 @@ export const Projects = () => {
                         <h3 className="vertica-timeline-element-title">
                             Atlassian x UNIHACK
                         </h3>
-                        <p> Developed a slackbot that uses AI to summarise conversations from the past number of days, hours, or messages and displays the summary on a website</p>
+                        <p> Developed a slackbot that uses AI to summarise conversations from the past number of days, hours, or messages and displays the summary on a website.</p>
                         <p className="Tech">Tech Used: React, Python</p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -78,7 +93,7 @@ export const Projects = () => {
                         <h3 className="vertica-timeline-element-title">
                             Accenture Hackathon
                         </h3>
-                        <p>Developed a travel planning assistant app that creates personalised travel times for users when taking trips</p>
+                        <p>Developed a travel planning assistant app that creates personalised travel times for users when taking trips.</p>
                         <p className="Tech">Tech Used: Python, AWS DynamoDB, React </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
