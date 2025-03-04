@@ -10,7 +10,7 @@ export const Home = () => {
                     <h1 className="title">HELLO! I'M KELVIN GIAN</h1>
                 </Grid>
                 <Grid item xs={12}>
-                    <p className="subtitle">A recent Computer Science graduate from Western Sydney University. </p>
+                    <p className="subtitle">A Graduate Software Engineer at Optus. </p>
                 </Grid>
             </Grid>
         </div>
