@@ -1,57 +1,45 @@
-name: Deploy
+name: GitHub Pages
 
 on:
   push:
     branches:
       - main
+  pull_request:
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-
+  deploy:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: '24'
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "YARN_CACHE_DIR=$(yarn cache dir)" >> "${GITHUB_OUTPUT}"
 
-      - name: Build project
-        run: npm run build
-
-      - name: List files in dist directory
-        run: ls -R ./dist
-
-      - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2
+      - name: Cache dependencies
+        uses: actions/cache@v4
         with:
-          name: production-files
-          path: ./dist
+          path: ${{ steps.yarn-cache.outputs.YARN_CACHE_DIR }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - run: yarn export
 
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: production-files
-          path: ./dist
-
-      - name: List downloaded files
-        run: ls -R ./dist
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./out
