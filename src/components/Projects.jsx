@@ -38,7 +38,7 @@ export const Projects = () => {
                             Graduate Software Engineer
                         </h3>
                         <p> Currently a Graduate Software Engineer in AI/ML (Emerging Technology) Rotation. </p>
-                        <p className="Tech">Tech Used: Springboot, Python, BigQuery, Dialogflow CX</p>
+                        <p className="Tech">Tech Used: Java, Python, BigQuery, Dialogflow CX, Bamboo</p>
                     </VerticalTimelineElement>
                 <VerticalTimelineElement
                         className="vertical-timeline-element--education"
