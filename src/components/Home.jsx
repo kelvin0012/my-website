@@ -7,7 +7,7 @@ export const Home = () => {
         <div className="home">
             <Grid container direction="column" justifyContent="center" alignItems="center">
                 <Grid item xs={12}>
-                    <h1 className="title">HELLO! I'M KELVIN GIAN</h1>
+                    <h1 className='title'>HELLO! I&apos;M KELVIN GIAN</h1>
                 </Grid>
                 <Grid item xs={12}>
                     <p className="subtitle">A Graduate Software Engineer at Optus. </p>
