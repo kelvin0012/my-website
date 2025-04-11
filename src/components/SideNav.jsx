@@ -5,7 +5,7 @@ import { Box, ListItemButton } from '@mui/material';
 
 export const SideNav = () => {
     return (
-        <Box sx={{ maxWidth: 35, backgroundColor: 'rgb(23, 20, 20)', position: 'fixed', top: '80%', transform: 'translateY(-50%)', padding: 2 }}>
+        <Box sx={{ maxWidth: 35, backgroundColor: 'transparent', position: 'fixed', top: '80%', transform: 'translateY(-50%)', padding: 2 }}>
             <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kelvin-gian-228887263/">
                 <ListItemButton sx={{ justifyContent: 'center' }}>
                     <LinkedInIcon fontSize="large" style={{ color: 'gray' }} />
