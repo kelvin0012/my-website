@@ -19,7 +19,7 @@ export const HeadNav = () => {
     };
 
     const drawer = (
-        <List sx={{ backgroundColor: 'black', height: '100%', color: 'white' }}>
+        <List sx={{ backgroundColor: 'rgb(13, 12, 12)', height: '100%', color: 'white' }}>
             <ListItem onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); handleLinkClick(); }} sx={{ justifyContent: 'center' }}>
                 <Button className="underlineHover" sx={{ color: 'white', width: '100%' }} color='inherit'>Home</Button>
             </ListItem>
