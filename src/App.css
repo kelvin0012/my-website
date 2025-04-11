@@ -64,7 +64,7 @@
 } */
 
 .projects {
-  width: 100%;
+  width: auto;
   position: relative;
   text-align: center;
   display:flex;
@@ -74,7 +74,7 @@
 }
 
 .projectsTitle {
-  width: 100%;
+  width: auto;
   position: relative;
   text-align: center;
   display:flex;
