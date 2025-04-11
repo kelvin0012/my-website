@@ -1,5 +1,5 @@
-import { Container } from "@mui/material"
-import { Box, Grid } from "@mui/material"
+import { Container } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import Divider from '@mui/material/Divider';
 import {
     VerticalTimeline, VerticalTimelineElement,
@@ -7,12 +7,10 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import LanguageIcon from '@mui/icons-material/Language';
 import accentureLogo from "../assets/accentureLogo.jpg";
-import wsuLogo from "../assets/wsuLogo.jpg"
-import websiteIcon from "../assets/websiteIcon.png"
-import unihack2024Icon from "../assets/unihack2024Icon.png"
-import optusIcon from "../assets/Optus_logo.png"
-
-
+import wsuLogo from "../assets/wsuLogo.jpg";
+import websiteIcon from "../assets/websiteIcon.png";
+import unihack2024Icon from "../assets/unihack2024Icon.png";
+import optusIcon from "../assets/optusLogo.png";
 
 export const Projects = () => {
     return (
@@ -26,21 +24,21 @@ export const Projects = () => {
             </div>
             <div className="projects">
                 <VerticalTimeline lineColor="gray">
-                <VerticalTimelineElement
+                    <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date={<span style={{ color: "white" }}>February 2025 - Current</span>}
                         iconStyle={{ background: "white" }}
-                        icon={<img className="websiteIcon"
+                        icon={<img className="optusLogo"
                             src={optusIcon}
                             alt="optusIcon Icon Image"
                         />}>
-                        <h3 className="vertica-timeline-element-title">
+                        <h3 className="vertical-timeline-element-title">
                             Graduate Software Engineer
                         </h3>
                         <p> Currently a Graduate Software Engineer in AI/ML (Emerging Technology) Rotation. </p>
                         <p className="Tech">Tech Used: Java, Python, BigQuery, Dialogflow CX, Bamboo</p>
                     </VerticalTimelineElement>
-                <VerticalTimelineElement
+                    <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date={<span style={{ color: "white" }}>March 2024 - Nov 2024</span>}
                         iconStyle={{ background: "white" }}
@@ -48,7 +46,7 @@ export const Projects = () => {
                             src={wsuLogo}
                             alt="WSU Icon Image"
                         />}>
-                        <h3 className="vertica-timeline-element-title">
+                        <h3 className="vertical-timeline-element-title">
                             Software Engineer Intern
                         </h3>
                         <p> Full-Stack Developer for the Work Place Management Information System Project, contributing to both front-end and back-end development.</p>
@@ -62,7 +60,7 @@ export const Projects = () => {
                             src={unihack2024Icon}
                             alt="unihack2024 Icon Image"
                         />}>
-                        <h3 className="vertica-timeline-element-title">
+                        <h3 className="vertical-timeline-element-title">
                             Atlassian x UNIHACK
                         </h3>
                         <p> Developed a slackbot that uses AI to summarise conversations from the past number of days, hours, or messages and displays the summary on a website.</p>
@@ -76,7 +74,7 @@ export const Projects = () => {
                             src={websiteIcon}
                             alt="Website Icon Image"
                         />}>
-                        <h3 className="vertica-timeline-element-title">
+                        <h3 className="vertical-timeline-element-title">
                             Portfolio Website
                         </h3>
                         <p> This very site you are using right now!!</p>
@@ -90,7 +88,7 @@ export const Projects = () => {
                             src={accentureLogo}
                             alt="Accenture Logo Image"
                         />}>
-                        <h3 className="vertica-timeline-element-title">
+                        <h3 className="vertical-timeline-element-title">
                             Accenture Hackathon
                         </h3>
                         <p>Developed a travel planning assistant app that creates personalised travel times for users when taking trips.</p>
@@ -104,7 +102,7 @@ export const Projects = () => {
                             src={wsuLogo}
                             alt="WSU Logo Image"
                         />}>
-                        <h3 className="vertica-timeline-element-title">
+                        <h3 className="vertical-timeline-element-title">
                             Western Sydney University
                         </h3>
                         <p> Bachelor of Computer Science, Artificial Intelligence Major</p>
@@ -113,5 +111,5 @@ export const Projects = () => {
                 </VerticalTimeline>
             </div>
         </div>
-    )
+    );
 }
