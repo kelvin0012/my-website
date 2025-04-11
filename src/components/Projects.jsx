@@ -35,8 +35,8 @@ export const Projects = () => {
                         <h3 className="vertical-timeline-element-title">
                             Graduate Software Engineer
                         </h3>
-                        <p> Currently a Graduate Software Engineer in AI/ML (Emerging Technology) Rotation. </p>
-                        <p className="Tech">Tech Used: Java, Python, BigQuery, Dialogflow CX, Bamboo</p>
+                        <p> Software Engineer in AI/ML (Emerging Technology) Rotation. Currently involved in OCA AI Search.</p>
+                        <p className="Tech">Tech Used: Spring Boot, Python, Google BigQuery, Google Cloud Platform (GCP), Bamboo</p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
@@ -64,7 +64,7 @@ export const Projects = () => {
                             Atlassian x UNIHACK
                         </h3>
                         <p> Developed a slackbot that uses AI to summarise conversations from the past number of days, hours, or messages and displays the summary on a website.</p>
-                        <p className="Tech">Tech Used: React, Python</p>
+                        <p className="Tech">Tech Used: React, Python, Figma</p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
@@ -77,8 +77,8 @@ export const Projects = () => {
                         <h3 className="vertical-timeline-element-title">
                             Portfolio Website
                         </h3>
-                        <p> This very site you are using right now!!</p>
-                        <p className="Tech">Tech Used: React</p>
+                        <p> This very site you are using right now!</p>
+                        <p className="Tech">Tech Used: React, MUI (Material UI), Node.js</p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"

@@ -23,62 +23,62 @@ export const Skills = () => {
                 <Grid item xs={6} sm={3} md={1}>
                     <Tooltip title="Strong foundation" placement="top" PopperProps={{
                         popperOptions: {
-                        modifiers: [
-                            {
-                            name: 'offset',
-                            options: {
-                                offset: [0, 50], 
+                            modifiers: [
+                                {
+                                    name: 'offset',
+                                    options: {
+                                        offset: [0, 50],
+                                    },
                                 },
-                            },
-                        ],
-                    },
-                }}>
-                        <img className="skillsIcon" src={cppIcon} alt="CPP Icon Image"/>
+                            ],
+                        },
+                    }}>
+                        <img className="skillsIcon" src={cppIcon} alt="CPP Icon Image" />
                         <p>C++</p>
                     </Tooltip>
                 </Grid>
                 <Grid item xs={6} sm={3} md={1}>
                     <Tooltip title="Extensive experience" placement="top" PopperProps={{
                         popperOptions: {
-                        modifiers: [
-                            {
-                            name: 'offset',
-                            options: {
-                                offset: [0, 50], 
+                            modifiers: [
+                                {
+                                    name: 'offset',
+                                    options: {
+                                        offset: [0, 50],
+                                    },
                                 },
-                            },
-                        ],
-                    },
-                }}>
-                    <img className="skillsIcon" src={pythonIcon} alt="Python Icon Image"/>
-                    <p>Python</p>
+                            ],
+                        },
+                    }}>
+                        <img className="skillsIcon" src={pythonIcon} alt="Python Icon Image" />
+                        <p>Python</p>
                     </Tooltip>
                 </Grid>
                 <Grid item xs={6} sm={3} md={1}>
-                    <img className="skillsIcon" src={reactIcon} alt="React Icon Image"/>
+                    <img className="skillsIcon" src={reactIcon} alt="React Icon Image" />
                     <p>React</p>
                 </Grid>
                 <Grid item xs={6} sm={3} md={1}>
-                    <img className="skillsIcon" src={jsIcon} alt="JavaScript Icon Image"/>
+                    <img className="skillsIcon" src={jsIcon} alt="JavaScript Icon Image" />
                     <p>JavaScript</p>
                 </Grid>
                 <Grid item xs={6} sm={3} md={1}>
-                    <img className="skillsIcon" src={htmlIcon} alt="HTML Icon Image"/>
+                    <img className="skillsIcon" src={htmlIcon} alt="HTML Icon Image" />
                     <p>HTML</p>
                 </Grid>
                 <Grid item xs={6} sm={3} md={1}>
-                    <img className="skillsIcon" src={cssIcon} alt="CSS Icon Image"/>
+                    <img className="skillsIcon" src={cssIcon} alt="CSS Icon Image" />
                     <p>CSS</p>
                 </Grid>
                 <Grid item xs={6} sm={3} md={1}>
-                    <img className="skillsIcon" src={sqlIcon} alt="SQL Icon Image"/>
+                    <img className="skillsIcon" src={sqlIcon} alt="SQL Icon Image" />
                     <p>SQL</p>
                 </Grid>
                 <Grid item xs={6} sm={3} md={1}>
-                    <img className="skillsIcon" src={dynamodbIcon} alt="DynamoDB Icon Image"/>
+                    <img className="skillsIcon" src={dynamodbIcon} alt="DynamoDB Icon Image" />
                     <p>DynamoDB</p>
                 </Grid>
-            </Grid>       
+            </Grid>
         </div>
     )
 }
