@@ -14,18 +14,22 @@ export const HeadNav = () => {
         setDrawerOpen(open);
     };
 
+    const handleLinkClick = () => {
+        setDrawerOpen(false);
+    };
+
     const drawer = (
         <List sx={{ backgroundColor: 'black', height: '100%', color: 'white' }}>
-            <ListItem onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} sx={{ justifyContent: 'center' }}>
+            <ListItem onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); handleLinkClick(); }} sx={{ justifyContent: 'center' }}>
                 <Button className="underlineHover" sx={{ color: 'white', width: '100%' }} color='inherit'>Home</Button>
             </ListItem>
             <ListItem sx={{ justifyContent: 'center' }}>
-                <Link to="projectsTitle" smooth duration={500} style={{ width: '100%' }}>
+                <Link to="projectsTitle" smooth duration={500} style={{ width: '100%' }} onClick={handleLinkClick}>
                     <Button className="underlineHover" sx={{ color: 'white', width: '100%' }} color='inherit'>Experience</Button>
                 </Link>
             </ListItem>
             <ListItem sx={{ justifyContent: 'center' }}>
-                <Link to="skills" smooth duration={500} style={{ width: '100%' }}>
+                <Link to="skills" smooth duration={500} style={{ width: '100%' }} onClick={handleLinkClick}>
                     <Button className="underlineHover" sx={{ color: 'white', width: '100%' }} color='inherit'>Skills</Button>
                 </Link>
             </ListItem>

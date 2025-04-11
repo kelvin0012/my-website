@@ -18,41 +18,6 @@ export const Skills = () => {
             <Grid container direction="row" justifyContent="center" alignItems="center" spacing={2}>
                 <Grid item xs={12}>
                     <h2 className="skillsTitle">SKILLS</h2>
-                    <p className="hoverText">Hover over icons for more details</p>
-                </Grid>
-                <Grid item xs={6} sm={3} md={1}>
-                    <Tooltip title="Strong foundation" placement="top" PopperProps={{
-                        popperOptions: {
-                            modifiers: [
-                                {
-                                    name: 'offset',
-                                    options: {
-                                        offset: [0, 50],
-                                    },
-                                },
-                            ],
-                        },
-                    }}>
-                        <img className="skillsIcon" src={cppIcon} alt="CPP Icon Image" />
-                        <p>C++</p>
-                    </Tooltip>
-                </Grid>
-                <Grid item xs={6} sm={3} md={1}>
-                    <Tooltip title="Extensive experience" placement="top" PopperProps={{
-                        popperOptions: {
-                            modifiers: [
-                                {
-                                    name: 'offset',
-                                    options: {
-                                        offset: [0, 50],
-                                    },
-                                },
-                            ],
-                        },
-                    }}>
-                        <img className="skillsIcon" src={pythonIcon} alt="Python Icon Image" />
-                        <p>Python</p>
-                    </Tooltip>
                 </Grid>
                 <Grid item xs={6} sm={3} md={1}>
                     <img className="skillsIcon" src={reactIcon} alt="React Icon Image" />
