@@ -1,4 +1,4 @@
-import { AppBar, IconButton, Toolbar, Typography, Stack, Button, Drawer, List, ListItem, ListItemText } from "@mui/material";
+import { AppBar, IconButton, Toolbar, Typography, Stack, Button, Drawer, List, ListItem } from "@mui/material";
 import { Link } from "react-scroll";
 import profileHeadshot from "../assets/profileHeadshot.png";
 import MenuIcon from '@mui/icons-material/Menu';
@@ -16,17 +16,17 @@ export const HeadNav = () => {
 
     const drawer = (
         <List sx={{ backgroundColor: 'black', height: '100%', color: 'white' }}>
-            <ListItem  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                <ListItemText primary="Home" />
+            <ListItem onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} sx={{ justifyContent: 'center' }}>
+                <Button className="underlineHover" sx={{ color: 'white', width: '100%' }} color='inherit'>Home</Button>
             </ListItem>
-            <ListItem >
-                <Link to="projectsTitle" smooth duration={500}>
-                    <ListItemText primary="Experience" />
+            <ListItem sx={{ justifyContent: 'center' }}>
+                <Link to="projectsTitle" smooth duration={500} style={{ width: '100%' }}>
+                    <Button className="underlineHover" sx={{ color: 'white', width: '100%' }} color='inherit'>Experience</Button>
                 </Link>
             </ListItem>
-            <ListItem >
-                <Link to="skills" smooth duration={500}>
-                    <ListItemText primary="Skills" />
+            <ListItem sx={{ justifyContent: 'center' }}>
+                <Link to="skills" smooth duration={500} style={{ width: '100%' }}>
+                    <Button className="underlineHover" sx={{ color: 'white', width: '100%' }} color='inherit'>Skills</Button>
                 </Link>
             </ListItem>
         </List>
