@@ -13,6 +13,7 @@ import dynamodbIcon from "../assets/aws-dynamodb.svg";
 import nodeIcon from "../assets/nodejs.png"
 import javaIcon from "../assets/javaIcon.png"
 import mysqlIcon from "../assets/mysqlIcon.png"
+import googlecloudplatformIcon from "../assets/googlecloudplatformIcon.png"
 import Tooltip from '@mui/material/Tooltip';
 
 export const Skills = () => {
@@ -21,6 +22,10 @@ export const Skills = () => {
             <Grid container direction="row" justifyContent="center" alignItems="center" spacing={2}>
                 <Grid item xs={12} style={{ paddingBottom: '10px' }}>
                     <h2 className="skillsTitle">SKILLS</h2>
+                </Grid>
+                <Grid item xs={6} sm={3} md={1}>
+                    <img className="skillsIcon" src={googlecloudplatformIcon} alt="Google Cloud Platform Icon Image" />
+                    <p>Google Cloud Platform</p>
                 </Grid>
                 <Grid item xs={6} sm={3} md={1}>
                     <img className="skillsIcon" src={pythonIcon} alt="Python Icon Image" />
