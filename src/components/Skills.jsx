@@ -23,7 +23,7 @@ export const Skills = () => {
                 <Grid item xs={12} style={{ paddingBottom: '10px' }}>
                     <h2 className="skillsTitle">SKILLS</h2>
                 </Grid>
-                <Grid item xs={6} sm={3} md={1}>
+                <Grid item xs={6} sm={3} md={1} sx={{ marginLeft: "20px" }}>
                     <img className="skillsIcon" src={googlecloudplatformIcon} alt="Google Cloud Platform Icon Image" />
                     <p>Google Cloud Platform</p>
                 </Grid>
