@@ -15,6 +15,7 @@ import cssIcon from '../assets/cssIcon.png';
 import mysqlIcon from '../assets/mysqlIcon.png';
 import dynamoIcon from '../assets/aws-dynamodb.svg';
 import sqlIcon from '../assets/sqlIcon.png';
+import risersIcon from '../assets/88risersIcon.svg';
 
 // Source of truth: LinkedIn profile (exported Nov 2026).
 
@@ -110,6 +111,16 @@ export const experience = [
 
 /** Projects, hackathons & bootcamps. */
 export const projects = [
+  {
+    name: '88 Risers',
+    event: 'Co-founder · Live site',
+    date: 'Oct 2026 — Present',
+    logo: risersIcon,
+    summary: 'Website for a social arm wrestling club in Rhodes, Sydney. Members register for a permanent Riser ID, every match is logged to a public database, and tournament winners earn a champion card.',
+    tech: ['Next.js', 'React', 'Vercel'],
+    accent: '#d5b67a',
+    href: 'https://www.88risers.com/',
+  },
   {
     name: 'AI Slack Summariser',
     event: 'Atlassian × UNIHACK',
