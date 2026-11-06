@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main  # Deploy when changes are pushed to main
+      - portfolio-redesign
+  workflow_dispatch:  # Manual "Run workflow" button in the Actions tab
 
 jobs:
   deploy:
