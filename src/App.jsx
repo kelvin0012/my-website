@@ -1,32 +1,33 @@
-import { useState } from 'react'
-import { HeadNav } from './components/HeadNav.jsx'
-import './App.css'
-import { SideNav } from './components/SideNav.jsx'
-import { Home } from './components/Home.jsx'
-import { Projects } from './components/Projects.jsx'
-import { Skills } from './components/Skills.jsx'
+import { lazy, Suspense } from 'react';
+import { RouterProvider, useRoute, ModeSwitch } from './shared/Router.jsx';
+import { Cursor } from './shared/Cursor.jsx';
+import { ProSite } from './pro/ProSite.jsx';
+import './App.css';
 
+// The play site is heavier, so load it only when someone visits it.
+const PlaySite = lazy(() => import('./play/PlaySite.jsx'));
 
-function App() {
+function Sites() {
+  const { mode } = useRoute();
   return (
-    <div className="App">
-      <div className="HeadNav">
-        <HeadNav/>
-      </div>
-      <div className="SideNav">
-        <SideNav/>
-      </div>
-      <div className="Main">
-          <Home/>
-          <Projects/>
-          <Skills/>
-          {/* <Contact/> */}
-      </div>
-      {/* <footer>
-        Designed and Made by Kelvin Gian | 2024
-      </footer> */}
-    </div>
-  )
+    <>
+      <Cursor />
+      <ModeSwitch />
+      {mode === 'play' ? (
+        <Suspense fallback={<div className="play-fallback">LOADING…</div>}>
+          <PlaySite />
+        </Suspense>
+      ) : (
+        <ProSite />
+      )}
+    </>
+  );
 }
 
-export default App
+export default function App() {
+  return (
+    <RouterProvider>
+      <Sites />
+    </RouterProvider>
+  );
+}
