@@ -129,6 +129,7 @@ export const projects = [
     summary: 'A Slackbot that uses AI to summarise conversations from the past N days, hours or messages, then shows the digest on a companion website.',
     tech: ['React', 'Python', 'Figma'],
     accent: '#7c5cff',
+    href: 'https://devpost.com/software/recapit',
   },
   {
     name: 'TripMama',
